@@ -74,6 +74,7 @@
                                 </segments>
                                 <connections>
                                     <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="2iM-R4-N3x"/>
+                                    <action selector="dismiss:" destination="BYZ-38-t0r" eventType="valueChanged" id="zvS-sI-kYS"/>
                                 </connections>
                             </segmentedControl>
                         </subviews>

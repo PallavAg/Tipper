@@ -24,7 +24,10 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated)
         
         let anIndex = UserDefaults.standard.integer(forKey: "index")
+        tipControl.selectedSegmentIndex = anIndex
+        
         billField.text = UserDefaults.standard.string(forKey: "bill")
+        
         let bill = Double(billField.text!) ?? 0
         let tipPercentages = [0.1, 0.18, 0.2]
         let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
@@ -33,11 +36,6 @@ class ViewController: UIViewController {
         //Update tip and total labels
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
-        
-        tipControl.selectedSegmentIndex = anIndex
-        
-        // This is a good place to retrieve the default tip percentage from UserDefaults
-        // and use it to update the tip amount
     }
     
     override func viewDidLoad() {
@@ -49,6 +47,9 @@ class ViewController: UIViewController {
         view.endEditing(true)
     }
     
+    @IBAction func dismiss(_ sender: Any) {
+        view.endEditing(true)
+    }
     @IBAction func calculateTip(_ sender: Any) {
         
         //Get Bill Amount
