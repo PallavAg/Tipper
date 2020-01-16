@@ -33,7 +33,7 @@ GIF created with [RecordIt](http://recordit.co).
 
 ## Notes
 
-While this app was relatively simple, it was interesting to build one that fully worked from the ground up while also learning about the different aspects of xcode that helped the process. The main challenge was in making sure that the code worked properly and getting used to the xcode environment. I'm excited for the many more projects that might come in the future as we learn more Swift. 
+While this app was relatively simple, it was interesting to build one that fully worked from the ground up while also learning about the different aspects of xcode that helped the process. The main challenge was in making sure that the code worked properly and getting used to the xcode environment. I'm excited for the many more projects that might come in the future as we learn more Swift. The extra challenge was completing the optional aspects of the app. Figuring out the code to use on my own and fixing bugs relating to it was tough but rewarding. I was able to successully complete the implementation of userdefaults.
 
 ## License
 
